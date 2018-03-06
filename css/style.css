@@ -1,5 +1,16 @@
-body {
 
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    #summary-div {
+
+    }
 }
 
 .overlay {
@@ -9,11 +20,10 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: #0a3d62;
     overflow-y: hidden;
     transition: 0.5s;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 .overlay-content {
@@ -22,7 +32,7 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 @media screen and (min-width: 800px) {
@@ -40,7 +50,7 @@ body {
     display: block;
     transition: 0.3s;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 .overlay-content a:before {
@@ -56,7 +66,7 @@ body {
   transform: scaleX(0);
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 .overlay-content a:hover:before {
@@ -68,18 +78,33 @@ body {
     color: #f1f1f1;
 }
 
-@media screen and (max-height: 450px) {
-    .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
 .name-menu {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
   font-weight: bold;
+}
+
+.name-main-page {
+  padding-top: 10px;
+  color: #c0392b;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: bold;
+}
+
+#summary-main-page {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Alegreya', serif;
+  margin-top: 40%;
+}
+
+#section-about{
+  margin-top: 10%;
+}
+
+.section-name{
+  font-size: 80px;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: bold;
+  vertical-align: baseline;
 }
